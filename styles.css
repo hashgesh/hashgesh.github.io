@@ -7,3 +7,8 @@ body{
   color: white;
   height: 2.5em;
 }
+
+.body{
+  margin-left: 50%;
+  margin-top: 50%;
+}
