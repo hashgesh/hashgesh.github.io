@@ -1,23 +1,41 @@
 {
-  "name": "hashgesh.github.io",
+  "name": "react-hooks-redux",
   "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
+  "description": "react-hooks-redux",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "webpack-dev-server": "webpack-dev-server",
+    "start": "webpack-dev-server --open --config webpack.dev.js",
+    "build": "webpack --config webpack.prod.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/hashgesh/hashgesh.github.io.git"
-  },
-  "author": "",
+  "author": "Arif Kursad KAVAS",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/hashgesh/hashgesh.github.io/issues"
+  "dependencies": {
+    "css-loader": "^3.6.0",
+    "file-loader": "^6.0.0",
+    "leaflet": "^1.6.0",
+    "node-sass": "^4.14.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-leaflet": "^2.7.0",
+    "react-redux": "^7.2.0",
+    "react-router-dom": "^5.2.0",
+    "redux": "^4.0.5",
+    "sass-loader": "^8.0.2",
+    "style-loader": "^1.2.1"
   },
-  "homepage": "https://github.com/hashgesh/hashgesh.github.io#readme",
   "devDependencies": {
-    "express": "^4.17.1"
+    "@babel/core": "^7.10.2",
+    "@babel/plugin-proposal-class-properties": "^7.10.1",
+    "@babel/preset-env": "^7.10.2",
+    "@babel/preset-react": "^7.10.1",
+    "babel-loader": "^8.1.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "html-webpack-plugin": "^4.3.0",
+    "path": "^0.12.7",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.11.0",
+    "webpack-merge": "^4.2.2"
   }
 }

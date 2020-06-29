@@ -1,0 +1,14 @@
+@import './mixins';
+
+$headerBackgroundColor: #050436;
+$headerFontColor: #ffffff;
+
+.mHeader {
+  @include m-font-family;
+  background-color: $headerBackgroundColor;
+  color: $headerFontColor;
+  font-size: 3em;
+  height: 90px;
+  line-height: 90px;
+  text-align: center;
+}
