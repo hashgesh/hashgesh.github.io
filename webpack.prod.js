@@ -8,7 +8,7 @@ module.exports = (arg) => {
     context: __dirname,
     entry: './src/index.js',
     output: {
-      path: path.resolve(__dirname, ''),
+      path: path.resolve(__dirname, 'dist'),
       filename: 'bundle.js',
       publicPath: '/',
     },
@@ -19,6 +19,7 @@ module.exports = (arg) => {
       rules: [
         {
           test: /\.js$/,
+          exclude: path.resolve(__dirname, 'node_modules'),
           use: 'babel-loader',
         },
         {
