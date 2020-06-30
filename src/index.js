@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { BrowserRouter as Router, HashRouter } from 'react-router-dom';
 
 import '../styles/index.scss';
 
@@ -20,9 +20,9 @@ process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
 
 ReactDOM.render(
   <Provider store={appStore}>
-    <Router>
+    <HashRouter basename={process.env.PUBLIC_URL}>
       <App />
-    </Router>
+    </HashRouter>
   </Provider>,
   document.getElementById('root')
 );
