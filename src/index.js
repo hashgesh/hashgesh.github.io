@@ -16,7 +16,7 @@ const appStore = createStore(
   window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
 );
 
-console.log('MODE: ', process.env.NODE_ENV);
+process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
 
 ReactDOM.render(
   <Provider store={appStore}>
