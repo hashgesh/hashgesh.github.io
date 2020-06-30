@@ -4,13 +4,12 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const path = require('path');
 
 module.exports = (arg) => {
-  console.log('This is the argument', arg);
   return {
     mode: 'development',
     context: __dirname,
     entry: './src/index.js',
     output: {
-      path: path.resolve(__dirname, ''),
+      path: path.resolve(__dirname, 'dist'),
       filename: 'bundle.js',
       publicPath: '/',
     },
@@ -21,7 +20,7 @@ module.exports = (arg) => {
       rules: [
         {
           test: /\.js$/,
-          exclude: [path.resolve(__dirname, 'node_modules'),path.resolve(__dirname, 'bundle.js'), path.resolve(__dirname, 'index.html')],
+          exclude: path.resolve(__dirname, 'node_modules'),
           use: 'babel-loader',
         },
         {

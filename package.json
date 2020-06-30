@@ -11,6 +11,7 @@
   "author": "Arif Kursad KAVAS",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.19.2",
     "css-loader": "^3.6.0",
     "file-loader": "^6.0.0",
     "leaflet": "^1.6.0",

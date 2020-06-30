@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { Map, Marker, Popup, TileLayer } from 'react-leaflet';
 
+import axios from 'axios';
+
 export default class Iss extends React.Component {
   constructor(props) {
     super(props);
@@ -27,6 +29,17 @@ export default class Iss extends React.Component {
         }
       ),
     };
+  }
+
+  componentDidMount(){
+    setInterval(() => {
+      axios.get('http://api.open-notify.org/iss-now.json')
+      .then(response => {
+        //console.log(response.data.iss_position);
+        const {latitude, longitude} = response.data.iss_position;
+        this.setState({position:[latitude, longitude]});
+      })
+    }, 3000);
   }
 
   render() {
