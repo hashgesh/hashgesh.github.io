@@ -1,9 +1,10 @@
 @import './_mixins';
+@use "sass:string";
 
 .mSidebar {
   background: #1b274d;
   height: 100%;
-  width: 15%;
+  width: 10%;
   float: left;
   position: absolute;
 }
@@ -14,8 +15,8 @@
 }
 
 .mProfilePhoto {
-  width: 10em;
-  height: 10em;
+  width: 60%;
+  height: 5%;
   border-radius: 1em;
 }
 
@@ -30,6 +31,19 @@
 
 .mSidebarItem {
   margin-top: 1em;
-  font-size: 2.5em;
+  font-size: 1.5rem;
   color: aliceblue;
+}
+
+
+@media only screen and (max-width: 1427px)  {
+  .mSidebar{
+    width: 5%;
+  }
+  .mProfilePhoto {
+    height: 3em;
+  }
+  .mSidebarItemContainer {
+    display: none;
+  }
 }

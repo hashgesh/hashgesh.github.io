@@ -29,10 +29,12 @@ export default class Iss extends React.Component {
         }
       ),
     };
+
+    const intervalId = null;
   }
 
   componentDidMount(){
-    setInterval(() => {
+    this.intervalId = setInterval(() => {
       axios.get('http://api.open-notify.org/iss-now.json')
       .then(response => {
         //console.log(response.data.iss_position);
@@ -40,6 +42,11 @@ export default class Iss extends React.Component {
         this.setState({position:[latitude, longitude]});
       })
     }, 3000);
+  }
+
+  componentWillUnmount(){
+    clearInterval(this.intervalId);
+
   }
 
   render() {
