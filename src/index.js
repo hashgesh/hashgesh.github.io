@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter as Router, HashRouter } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 
 import '../styles/index.scss';
 
@@ -16,13 +16,13 @@ const appStore = createStore(
   window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
 );
 
-process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
+//process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
 
 ReactDOM.render(
   <Provider store={appStore}>
-    <HashRouter basename={process.env.PUBLIC_URL}>
+    <Router>
       <App />
-    </HashRouter>
+    </Router>
   </Provider>,
   document.getElementById('root')
 );

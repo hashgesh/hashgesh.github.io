@@ -15,6 +15,7 @@ module.exports = (arg) => {
     },
     devServer: {
       historyApiFallback: true,
+      //https:true,
     },
     module: {
       rules: [

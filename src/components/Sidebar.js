@@ -12,8 +12,8 @@ export default (props) => {
       url: '/resume',
     },
     {
-      label: 'Town',
-      url: '/town',
+      label: 'WHO Data',
+      url: '/who',
     },
     {
       label: 'ISS',

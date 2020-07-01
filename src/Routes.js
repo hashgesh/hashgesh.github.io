@@ -2,10 +2,10 @@ import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 
 import Home from './containers/Home';
-import About from './components/About';
-import Iss from './components/Iss';
-import Town from './components/Town';
-import Resume from './components/Resume';
+import About from './containers/About';
+import Iss from './containers/Iss';
+import Resume from './containers/Resume';
+import Who from './containers/Who';
 
 const routes = (
   <Switch>
@@ -23,8 +23,8 @@ const routes = (
     <Route exact path='/iss'>
       <Iss />
     </Route>
-    <Route exact path='/town'>
-      <Town />
+    <Route exact path='/who'>
+      <Who />
     </Route>
   </Switch>
 );
