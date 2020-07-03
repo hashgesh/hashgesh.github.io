@@ -9,23 +9,16 @@ import Who from './containers/Who';
 
 const routes = (
   <Switch>
-    <Route exact path='/'>
-      <Home />
-    </Route>
+    <Route exact path='/' component={Home}/>
 
-    <Route exact path='/about'>
-      <About />
-    </Route>
+    <Route exact path='/about' component={About}/>
 
-    <Route exact path='/resume'>
-      <Resume />
-    </Route>
-    <Route exact path='/iss'>
-      <Iss />
-    </Route>
-    <Route exact path='/who'>
-      <Who />
-    </Route>
+    <Route exact path='/resume' component={Resume}/>
+
+    <Route exact path='/iss' component={Iss}/>
+
+    <Route exact path='/who' component={Who}/>
+
   </Switch>
 );
 
