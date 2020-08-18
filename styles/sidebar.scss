@@ -17,7 +17,7 @@
 .mProfilePhoto {
   width: 60%;
   height: 5%;
-  border-radius: 1em;
+  border-radius: 5em;
 }
 
 .mSidebarItemContainer {
@@ -35,9 +35,8 @@
   color: aliceblue;
 }
 
-
-@media only screen and (max-width: 1427px)  {
-  .mSidebar{
+@media only screen and (max-width: 1427px) {
+  .mSidebar {
     width: 5%;
   }
   .mProfilePhoto {
