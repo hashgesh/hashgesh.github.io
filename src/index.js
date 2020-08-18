@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Router } from 'react-router-dom';
+import { HashRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 import ReactGA from 'react-ga';
@@ -21,17 +21,17 @@ const history = createBrowserHistory();
 
 ReactGA.initialize('UA-108070842-2');
 
-history.listen(location => {
+history.listen((location) => {
   console.log(location);
   ReactGA.set({ page: location.pathname }); // Update the user's current page
   ReactGA.pageview(window.location.pathname); // Record a pageview for the given page
-})
+});
 
 ReactDOM.render(
   <Provider store={appStore}>
-    <Router history={history}>
+    <HashRouter>
       <App />
-    </Router>
+    </HashRouter>
   </Provider>,
   document.getElementById('root')
 );
