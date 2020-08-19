@@ -1,0 +1,36 @@
+.cardsList {
+  margin: auto;
+  width: 50%;
+
+  & > div {
+    margin-top: 2em;
+  }
+}
+
+.cardContainer {
+  background-color: #c9dbe8;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 100%;
+  padding: 1em;
+  &:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  }
+  &::cardtext {
+    padding: 2px 16px;
+  }
+}
+
+.cardtext {
+  & > ul > li {
+    cursor: default;
+    &:hover {
+      background: none;
+      color: black;
+    }
+  }
+
+  & > a {
+    text-decoration: none;
+  }
+}

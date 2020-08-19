@@ -4,7 +4,7 @@
 .mSidebar {
   background: #1b274d;
   height: 100%;
-  width: 10%;
+  width: 20%;
   float: left;
   position: absolute;
 }
@@ -15,13 +15,13 @@
 }
 
 .mProfilePhoto {
-  width: 60%;
+  width: 50%;
   height: 5%;
   border-radius: 5em;
 }
 
 .mSidebarItemContainer {
-  padding: 2em 0 0 2em;
+  padding: 2em 0 0 5em;
   text-align: left;
   > a {
     @include m-font-family;
@@ -37,12 +37,15 @@
 
 @media only screen and (max-width: 1427px) {
   .mSidebar {
-    width: 5%;
+    width: 10%;
   }
   .mProfilePhoto {
     height: 3em;
   }
   .mSidebarItemContainer {
-    display: none;
+    padding: 1em 0 0 1em;
+    & > a > div {
+      font-size: 0.9em;
+    }
   }
 }

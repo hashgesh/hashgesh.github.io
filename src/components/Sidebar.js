@@ -3,22 +3,22 @@ import { Link } from 'react-router-dom';
 
 export default (props) => {
   const sidebarItems = [
+    //{
+    //  label: 'About me',
+    //  url: '/about',
+    //},
     {
-      label: 'About me',
-      url: '/about',
+      label: 'Experience',
+      url: '/experience',
     },
     {
-      label: 'Resume',
-      url: '/resume',
+      label: 'Education',
+      url: '/education',
     },
-    {
-      label: 'WHO Data',
-      url: '/who',
-    },
-    {
-      label: 'ISS',
-      url: '/iss',
-    },
+    //{
+    //  label: 'ISS',
+    //  url: '/iss',
+    //},
   ];
   return (
     <div className='mSidebar'>
