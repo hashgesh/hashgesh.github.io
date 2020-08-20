@@ -10,7 +10,7 @@ import Education from './containers/Education';
 
 const routes = (
   <Switch>
-    <Route exact path='/' component={Experience} />
+    <Route exact path='/' component={About} />
 
     <Route exact path='/education' component={Education} />
 
