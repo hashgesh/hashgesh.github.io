@@ -1,5 +1,5 @@
 const initialState = {
-  productName: 'marqop',
+  productName: 'hashgesh.github.io',
 };
 
 export const appReducer = (state = initialState, action) => {
