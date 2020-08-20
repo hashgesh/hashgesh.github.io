@@ -1,10 +1,8 @@
 export const pbpDesc = [
   "Taking part and ownership on development of  companys' customer facing web application and internal web applications.",
-  'Intensive front-end development using Angular Framework(with Typescript, Scss). Utilizing Java\
+  'Intensive front-end development using Angular Framework(with Typescript, Scss). Utilizing Java with Dropwizard\
       for backend development. Managing Keycloak, which is used for identity management with\
       federations',
-  'Contributing to DevOps operations, fine tunings for optimized builds, experience with Ansible,Docker.',
-  '',
 ];
 
 export const jotDesc = [
@@ -22,7 +20,7 @@ export const bimDesc = [
 
 export const nokiaDesc = [
   'Developed software for GSM network backbone. Multiprocess, multithreaded scalable\
-applications realized on Linux servers with strict performance considerations. Extensive usage of\
+applications realized on Linux servers with strict performance considerations. Extensive usage of \
 C/C++, for development of mediation framework with concentration on High Available File\
 Systems, Scalability, synchronization, network programming. Used Vi and Eclipse for\
 development and ddd/gdb for debugging, Valgrind for memory tests',

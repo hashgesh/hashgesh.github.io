@@ -18,42 +18,47 @@ export default (props) => {
         techStack='Angular10, Java, Dropwizard, Microservices, Linux, Ansible, Nginx'
         description={pbpDesc}
         companyUrl='https://paybyphone-parken.de'
+        location='Erlangen/Germany'
       ></Card>
 
       <Card
         jobTitle='Senior Software Engineer'
         companyName='Jotform'
-        duration='1.2018 - 12.2018'
+        duration='01.2018 - 12.2018'
         techStack='React, Redux, PHP, MySQL'
         description={jotDesc}
         companyUrl='https://jotform.com'
+        location='Izmir/Turkey'
       ></Card>
 
       <Card
         jobTitle='Senior Software Engineer'
         companyName='Bimar IT'
-        duration='6.2014 - 1.2018'
+        duration='06.2014 - 01.2018'
         techStack='AngularJs, .Net Core, C#, Oracle DB'
         description={bimDesc}
         companyUrl='http://bimar.com.tr'
+        location='Izmir/Turkey'
       ></Card>
 
       <Card
         jobTitle='Senior Software Engineer & Architect'
         companyName='Nokia'
-        duration='7.2009 - 6.2014'
+        duration='07.2009 - 06.2014'
         techStack='C, C++, Java, PHP, Linux, Solaris,Apache, Tomcat, JBoss, ddd/gdb'
         description={nokiaDesc}
         companyUrl='https://nokia.com'
+        location='Istanbul/Turkey'
       ></Card>
 
       <Card
         jobTitle='Embedded Software Engineer & Architect'
         companyName='Grundig Electronics'
-        duration='9.2007 - 7.2009'
+        duration='09.2007 - 07.2009'
         techStack='C, C++, RTOS,'
         description={grundigDesc}
         companyUrl='https://grundig.com.tr'
+        location='Izmir/Turkey'
       ></Card>
     </div>
 

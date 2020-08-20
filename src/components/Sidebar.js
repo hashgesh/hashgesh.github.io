@@ -36,6 +36,9 @@ export default (props) => {
         })}
         <div className='mSidebarItem'></div>
       </div>
+      <div className='mSidebarBottom'>
+        <a href='mailTo:arifkavas@gmail.com'>Contact</a>
+      </div>
     </div>
   );
 };
