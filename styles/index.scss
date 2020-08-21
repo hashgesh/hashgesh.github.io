@@ -15,6 +15,7 @@ body {
 
 body {
   margin: 0px;
+  font-family: monospace;
 }
 
 .mPageContent {
@@ -38,7 +39,11 @@ body {
   margin: auto;
   margin-top: 5em;
   padding: 4em;
-  font-size: 1.5em;
+  font-size: 1em;
+
+  & > a {
+    text-decoration: none;
+  }
 
   &:hover {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);

@@ -20,10 +20,13 @@ export default (props) => {
     //  url: '/iss',
     //},
   ];
+
   return (
     <div className='mSidebar'>
       <div className='mPhotoContainer'>
-        <img className='mProfilePhoto' src='../static/arif.jpg'></img>
+        <Link to='/'>
+          <img className='mProfilePhoto' src='../static/arif.jpg'></img>
+        </Link>
       </div>
 
       <div className='mSidebarItemContainer'>

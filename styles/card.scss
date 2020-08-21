@@ -25,20 +25,28 @@
 .cardHeader {
   border-bottom: solid 1px #cecdce;
   height: 2em;
+  & > b > a {
+    text-decoration: none;
+  }
 }
 
 .cardtext {
-  & p > ul > li {
-    cursor: default;
-    text-align: justify;
-    &:hover {
-      background: none;
-      color: black;
+  & > p {
+    & > span {
+      margin-left: 1em;
     }
   }
 
-  & > a {
-    text-decoration: none;
+  & > ul {
+    & > li {
+      margin-left: 1em;
+      cursor: default;
+      text-align: justify;
+      &:hover {
+        background: none;
+        color: black;
+      }
+    }
   }
 }
 

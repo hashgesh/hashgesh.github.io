@@ -16,9 +16,12 @@ export default (props) => {
       {/* <img src={avatarImage} alt='Avatar' style='width:100%'></img> */}
       <div className='cardHeader'>
         <b>
-          {jobTitle} - {companyName}
+          {jobTitle} -{' '}
+          <a href={companyUrl} target='_blank'>
+            {companyName}
+          </a>
           <span className='workLocation'>{location}</span>
-          <div className='workDuration'>{duration}</div>
+          <div className='workDuration'>[{duration}]</div>
         </b>
       </div>
       <div className='cardtext'>
@@ -26,21 +29,18 @@ export default (props) => {
           <p>
             <b>Tech Stack</b>
             <br />
-            {techStack}
+            <span>{techStack}</span>
           </p>
         )}
         <p>
           <b>Description</b>
-
-          <ul>
-            {description.map((d) => (
-              <li key={d}>{d}</li>
-            ))}
-          </ul>
         </p>
-        <a href={companyUrl} target='_blank'>
-          {companyUrl}
-        </a>
+
+        <ul>
+          {description.map((d) => (
+            <li key={d}>{d}</li>
+          ))}
+        </ul>
       </div>
     </div>
   );
