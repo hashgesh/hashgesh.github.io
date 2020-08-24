@@ -6,9 +6,9 @@ import {
   bimDesc,
   nokiaDesc,
   grundigDesc,
-} from '../../static/jobDesc';
+} from '../public/jobDesc';
 
-export default (props) => {
+const Experience = (props) => {
   return (
     <div className='cardsList'>
       <Card
@@ -70,3 +70,5 @@ export default (props) => {
     //   ></object>
   );
 };
+
+export default Experience;

@@ -1,7 +1,7 @@
 import React from 'react';
 import Card from '../components/Card';
 
-export default (props) => {
+const Education = (props) => {
   const mscDesc = [];
   return (
     <div className='cardsList'>
@@ -39,3 +39,5 @@ export default (props) => {
     </div>
   );
 };
+
+export default Education;

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-export default (props) => {
+const Card= (props) => {
   const {
     companyName,
     jobTitle,
@@ -45,3 +45,5 @@ export default (props) => {
     </div>
   );
 };
+
+export default Card;
