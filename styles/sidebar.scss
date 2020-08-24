@@ -1,0 +1,63 @@
+@import './_mixins';
+@use "sass:string";
+
+.mSidebar {
+  background: #1b274d;
+  height: 100%;
+  width: 15%;
+  float: left;
+  position: fixed;
+}
+
+.mPhotoContainer {
+  margin-top: 2em;
+  text-align: center;
+}
+
+.mProfilePhoto {
+  width: 50%;
+  height: 5%;
+  border-radius: 10em;
+  cursor: pointer;
+}
+
+.mSidebarItemContainer {
+  padding: 2em 0 0 3em;
+  text-align: left;
+  > a {
+    @include m-font-family;
+    text-decoration: none;
+  }
+}
+
+.mSidebarItem {
+  margin-top: 1em;
+  font-size: 1.5rem;
+  color: aliceblue;
+  cursor: pointer;
+}
+
+.mSidebarBottom {
+  position: absolute;
+  bottom: 1em;
+  margin-left: 1em;
+  & > a {
+    text-decoration: none;
+    color: white;
+  }
+}
+
+@media only screen and (max-width: 1427px) {
+  .mSidebar {
+    width: 10%;
+  }
+  .mProfilePhoto {
+    height: 3em;
+  }
+  .mSidebarItemContainer {
+    padding: 1em 0 0 1em;
+    & > a > div {
+      font-size: 0.9em;
+    }
+  }
+}
