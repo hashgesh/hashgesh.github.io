@@ -33,7 +33,7 @@ export default (props) => {
         companyName='Bornova Anadolu Lisesi'
         duration='09-1996 - 06-1999'
         description={['High School Education']}
-        companyUrl='https://yeditepe.edu.tr'
+        companyUrl='https://en.wikipedia.org/wiki/Bornova_Anadolu_Lisesi'
         location='Izmir/Turkey'
       ></Card>
     </div>
