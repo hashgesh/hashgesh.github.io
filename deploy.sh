@@ -1,4 +1,4 @@
-npm run build
-mv ./dist/* .
+npm run export
+mv ./out/* .
 git add .
 git commit
