@@ -10,7 +10,7 @@ export default (props) => {
       frontend technologies such as Angular(Js,Ts), ReactJs, Redux, Scss.{' '}
       <a href='mailTo:arifkavas@gmail.com'>I am open to remote roles.</a>
       <br />
-      <p>Skills(Experienced and currently utilized</p>
+      <p>Skills(Experienced and currently utilized)</p>
       <br />
       Backend: C, C++, C#, Java, PHP, NodeJs
       <br />
