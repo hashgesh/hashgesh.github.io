@@ -6,7 +6,7 @@ import {
   bimDesc,
   nokiaDesc,
   grundigDesc,
-} from '../../static/jobDesc';
+} from '../../static/jobDesc.tsx';
 
 export default (props) => {
   return (

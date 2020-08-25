@@ -5,7 +5,7 @@ module.exports = (arg) => {
   return {
     mode: 'production',
     context: __dirname,
-    entry: './src/index.js',
+    entry: './src/index.tsx',
     output: {
       path: path.resolve(__dirname, 'dist'),
       filename: 'bundle.js',
@@ -16,6 +16,11 @@ module.exports = (arg) => {
     },
     module: {
       rules: [
+        {
+          test: /\.tsx?$/,
+          use: 'ts-loader',
+          exclude: /node_modules/,
+        },
         {
           test: /\.js$/,
           exclude: path.resolve(__dirname, 'node_modules'),
@@ -34,6 +39,9 @@ module.exports = (arg) => {
           use: 'file-loader',
         },
       ],
+    },
+    resolve: {
+      extensions: ['.tsx', '.ts', '.js'],
     },
     plugins: [
       new HtmlWebPackPlugin({
