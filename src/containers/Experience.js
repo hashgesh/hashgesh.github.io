@@ -15,7 +15,18 @@ export default (props) => {
         jobTitle='Senior Software Engineer'
         companyName='PaybyPhone'
         duration='12.2018 - now'
-        techStack='Angular10, Typescript, Vanilla Js, Scss Java, Dropwizard, Microservices, Linux, Ansible, Nginx'
+        techStack={[
+          'Angular10',
+          'Typescript',
+          'Vanilla Js',
+          'Scss',
+          'Java',
+          'Dropwizard',
+          'Microservices',
+          'Linux',
+          'Ansible',
+          'Nginx',
+        ]}
         description={pbpDesc}
         companyUrl='https://paybyphone-parken.de'
         location='Erlangen/Germany'
@@ -25,7 +36,7 @@ export default (props) => {
         jobTitle='Senior Software Engineer'
         companyName='Jotform'
         duration='01.2018 - 12.2018'
-        techStack='React Js, Redux, Scss, PHP, MySQL'
+        techStack={['React Js', 'Redux', 'Scss', 'PHP', 'MySQL']}
         description={jotDesc}
         companyUrl='https://jotform.com'
         location='Izmir/Turkey'
@@ -35,7 +46,7 @@ export default (props) => {
         jobTitle='Senior Software Engineer'
         companyName='Bimar IT'
         duration='06.2014 - 01.2018'
-        techStack='AngularJs, Css, .Net Core, C#, Oracle DB'
+        techStack={['AngularJs', 'Css', '.Net Core', 'C#', 'Oracle DB']}
         description={bimDesc}
         companyUrl='http://bimar.com.tr'
         location='Izmir/Turkey'
@@ -45,7 +56,18 @@ export default (props) => {
         jobTitle='Senior Software Engineer & Architect'
         companyName='Nokia'
         duration='07.2009 - 06.2014'
-        techStack='C, C++, Java, PHP, Linux, Solaris,Apache, Tomcat, JBoss, ddd/gdb'
+        techStack={[
+          'C',
+          ' C++',
+          'Java',
+          'PHP',
+          'Linux',
+          'Solaris',
+          'Apache',
+          'Tomcat',
+          'JBoss',
+          'ddd/gdb',
+        ]}
         description={nokiaDesc}
         companyUrl='https://nokia.com'
         location='Istanbul/Turkey'
@@ -55,7 +77,7 @@ export default (props) => {
         jobTitle='Embedded Software Engineer & Architect'
         companyName='Grundig Electronics'
         duration='09.2007 - 07.2009'
-        techStack='C, C++, RTOS,'
+        techStack={['C', 'C++', 'RTOS']}
         description={grundigDesc}
         companyUrl='https://grundig.com.tr'
         location='Izmir/Turkey'

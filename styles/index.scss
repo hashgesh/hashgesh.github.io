@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;500;600;700&display=swap');
+
 @import 'header.scss';
 @import 'sidebar.scss';
 @import 'iss.scss';
 @import 'autocomplete.scss';
 @import 'card.scss';
+@import 'tag.scss';
 
 html,
 body {
@@ -15,7 +18,7 @@ body {
 
 body {
   margin: 0px;
-  font-family: monospace;
+  @include m-font-family;
 }
 
 .mPageContent {
@@ -35,7 +38,7 @@ body {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   width: 50%;
-  height: 50%;
+  height: fit-content;
   margin: auto;
   margin-top: 5em;
   padding: 4em;

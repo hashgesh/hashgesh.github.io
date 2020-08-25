@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Tag from './Tag';
 
 export default (props) => {
   const {
@@ -29,7 +30,11 @@ export default (props) => {
           <p>
             <b>Tech Stack</b>
             <br />
-            <span>{techStack}</span>
+            <div className='tagList'>
+              {techStack.map((t) => (
+                <Tag text={t} key={t}></Tag>
+              ))}
+            </div>
           </p>
         )}
         <p>

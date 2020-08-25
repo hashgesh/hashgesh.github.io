@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Card from '../components/Card';
+import Tag from '../components/Tag';
 
 export default (props) => {
   return (
@@ -12,13 +12,36 @@ export default (props) => {
       <br />
       <p>Skills(Experienced and currently utilized)</p>
       <br />
-      Backend: C, C++, C#, Java, PHP, NodeJs
+      Backend
+      <div className='tagList'>
+        {['C', 'C++', 'C#', 'Java', 'PHP', 'NodeJs'].map((t) => (
+          <Tag text={t} key={t}></Tag>
+        ))}
+      </div>
       <br />
-      Frontend: ReactJs, Angular[X], VanillaJs, Scss, Redux, NextJs
+      Frontend
+      <div className='tagList'>
+        {['ReactJs', 'Redux', 'Angular[X]', 'VanillaJs', 'NextJs', 'Scss'].map(
+          (t) => (
+            <Tag text={t} key={t}></Tag>
+          )
+        )}
+      </div>
       <br />
-      OS: Linux, Solaris
+      OS
+      <div className='tagList'>
+        {['Linux', 'Solaris'].map((t) => (
+          <Tag text={t} key={t}></Tag>
+        ))}
+      </div>
       <br />
-      Database: Mysql, PostgreSql, Oracle
+      Database
+      <div className='tagList'>
+        {' '}
+        {['Mysql', 'PostgreSql', 'Oracle', 'NoSql'].map((t) => (
+          <Tag text={t} key={t}></Tag>
+        ))}
+      </div>
     </div>
   );
 };

@@ -28,6 +28,9 @@ export default (props) => {
           <img className='mProfilePhoto' src='../static/arif.jpg'></img>
         </Link>
       </div>
+      <div className='mNameContainer'>
+        <a href='mailTo:arifkavas@gmail.com'>Arif Kürsad Kavas</a>
+      </div>
 
       <div className='mSidebarItemContainer'>
         {sidebarItems.map((item) => {

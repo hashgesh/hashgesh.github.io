@@ -9,7 +9,15 @@ export default (props) => {
         jobTitle='M.Sc Electronics Engineering'
         companyName='Istanbul Technical University'
         duration='09-2003 - 07-2006'
-        techStack='Matlab, Digital Signal Processing, DSP, C, CPM, GMSK, AIS'
+        techStack={[
+          'Matlab',
+          'Digital Signal Processing',
+          'DSP',
+          'C',
+          'CPM',
+          'GMSK',
+          'AIS',
+        ]}
         description={[
           'MSc with a focus on wireless communication. Graduation work on modelling and realization of\
         a GMSK modem with one bit differential detection. Aimed to be used on AIS for the sea vessels.',
@@ -21,7 +29,13 @@ export default (props) => {
         jobTitle='B.Sc Electronics Engineering'
         companyName='Yeditepe University'
         duration='09-1999 - 07-2003'
-        techStack='High Frequeny Electronics, Logic Circuits, Solid State Physics, Quantum Optoelectronics, Electromagnetics'
+        techStack={[
+          'High Frequeny Electronics',
+          'Logic Circuits',
+          'Solid State Physics',
+          'Quantum Optoelectronics',
+          'Electromagnetics',
+        ]}
         description={[
           'Graduation work was about design of a twin tee notch filter for S3 signalling system',
         ]}
