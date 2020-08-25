@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card snapshot renders 1`] = `
+<div
+  className="cardContainer"
+>
+  <div
+    className="cardHeader"
+  >
+    <b>
+       -
+       
+      <a
+        target="_blank"
+      />
+      <span
+        className="workLocation"
+      />
+      <div
+        className="workDuration"
+      >
+        [
+        ]
+      </div>
+    </b>
+  </div>
+  <div
+    className="cardtext"
+  >
+    <p>
+      <b>
+        Description
+      </b>
+    </p>
+    <ul />
+  </div>
+</div>
+`;

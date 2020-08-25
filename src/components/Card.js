@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Tag from './Tag';
 
-export default (props) => {
+export default function Card(props) {
   const {
     companyName,
     jobTitle,
@@ -49,4 +49,4 @@ export default (props) => {
       </div>
     </div>
   );
-};
+}
