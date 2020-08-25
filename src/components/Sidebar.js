@@ -29,7 +29,7 @@ export default (props) => {
         </Link>
       </div>
       <div className='mNameContainer'>
-        <a href='mailTo:arifkavas@gmail.com'>Arif Kürsad Kavas</a>
+        <Link to='/'>Arif Kürsad Kavas </Link>
       </div>
 
       <div className='mSidebarItemContainer'>
