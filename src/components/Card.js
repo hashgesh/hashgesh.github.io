@@ -27,7 +27,7 @@ export default function Card(props) {
       </div>
       <div className='cardtext'>
         {techStack && (
-          <p>
+          <div className='techStackContainer'>
             <b>Tech Stack</b>
             <br />
             <div className='tagList'>
@@ -35,7 +35,7 @@ export default function Card(props) {
                 <Tag text={t} key={t}></Tag>
               ))}
             </div>
-          </p>
+          </div>
         )}
         <p>
           <b>Description</b>
