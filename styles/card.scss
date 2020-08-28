@@ -7,8 +7,9 @@
 }
 
 .cardContainer {
-  background-color: #f6f6f6;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  @include card-background-color;
+  border-radius: 1em;
+  //box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   width: 100%;
   padding: 2em;
@@ -41,6 +42,8 @@
       margin-left: 1em;
       cursor: default;
       text-align: justify;
+      list-style: initial;
+      margin-bottom: 0.5em;
       &:hover {
         background: none;
         color: black;
@@ -49,8 +52,8 @@
   }
 }
 
-.techStackContainer{
-  margin-top:1em;
+.techStackContainer {
+  margin-top: 1em;
 }
 
 .workDuration {
