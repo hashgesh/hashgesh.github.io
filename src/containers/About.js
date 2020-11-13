@@ -16,7 +16,7 @@ export default (props) => {
         <br />
         Backend
         <div className='tagList'>
-          {['C', 'C++', 'C#', 'Java', 'PHP', 'NodeJs'].map((t) => (
+          {['C', 'C++', 'C#', 'Java', 'PHP', 'NodeJs', 'GraphQL'].map((t) => (
             <Tag text={t} key={t}></Tag>
           ))}
         </div>
