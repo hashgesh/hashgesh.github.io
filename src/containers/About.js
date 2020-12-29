@@ -10,7 +10,7 @@ export default (props) => {
         developed professional software using C,C++,C#, Java and utilized
         various frontend technologies such as Angular(Js,Ts), ReactJs, Redux,
         Scss.{' '}
-        <a href='mailTo:arifkavas@gmail.com'>I am open to remote roles.</a>
+        {false && <a href='mailTo:arifkavas@gmail.com'>I am open to remote roles.</a>}
         <br />
         <p>Skills(Experienced and currently utilized)</p>
         <br />
