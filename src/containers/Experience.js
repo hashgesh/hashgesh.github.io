@@ -14,7 +14,7 @@ export default (props) => {
       <Card
         jobTitle='Senior Software Engineer'
         companyName='PaybyPhone'
-        duration='12.2018 - now'
+        duration='12.2018 - 2.2021'
         techStack={[
           'Angular10',
           'Typescript',
