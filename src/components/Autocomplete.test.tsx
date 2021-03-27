@@ -5,7 +5,7 @@ import AutoComplete from './AutoComplete';
 
 describe('AutoComplete', () => {
   test('snapshot renders', () => {
-    const component = renderer.create(<AutoComplete options={[]} />);
+    const component = renderer.create(<AutoComplete />);
     let tree = component.toJSON();
     expect(tree).toMatchSnapshot();
   });
