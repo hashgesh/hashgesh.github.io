@@ -32,7 +32,7 @@ technical lead for projects in Vodafone Qatar and Vodafone United Kingdom)',
 ];
 
 export const grundigDesc = [
-  'Worked as an software engineer in variety of platforms starting from ARM based processor , embedded\
+  'Worked as a software engineer in variety of platforms starting from ARM based processor , embedded\
 Linux platforms and PC software.',
   ' Developed LCD TV and Set Top Box software using C, C++. Working\
 with real time operating systems.',
