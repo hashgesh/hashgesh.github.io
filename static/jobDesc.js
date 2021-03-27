@@ -1,3 +1,7 @@
+export const snowDesc = [
+  'Contributing to development of Cloud Native web applications'
+];
+
 export const pbpDesc = [
   "Taking part and ownership on development of  companys' customer facing web application and internal web applications.",
   'Intensive front-end development using Angular Framework(with Typescript, Scss). Utilizing Java with Dropwizard\
