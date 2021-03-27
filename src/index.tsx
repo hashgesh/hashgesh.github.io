@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { HashRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
-import { createStore } from 'redux';
+import { createStore,compose } from 'redux';
 import ReactGA from 'react-ga';
 import { createBrowserHistory } from 'history';
 
@@ -10,11 +10,20 @@ import '../styles/index.scss';
 
 import App from './containers/App';
 
-import marqAppReducer from './reducers';
+import rootReducer from './reducers';
+
+const enhancers = []
+
+if (process.env.NODE_ENV === 'development') {
+  const devToolsExtension = (window as any).__REDUX_DEVTOOLS_EXTENSION__ && (window as any).__REDUX_DEVTOOLS_EXTENSION__() || compose;
+  if (typeof devToolsExtension === 'function') {
+      enhancers.push(devToolsExtension)
+  }
+}
 
 const appStore = createStore(
-  marqAppReducer
-  //window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+  rootReducer,
+  ...enhancers
 );
 
 const history = createBrowserHistory();
