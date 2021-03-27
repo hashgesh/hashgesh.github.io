@@ -12,7 +12,7 @@ import {
 export default (props) => {
   return (
     <div className='cardsList'>
-      <Card
+        <Card
         jobTitle='Software Engineer'
         companyName='Snow Software'
         duration='03.2021 - '
@@ -31,9 +31,9 @@ export default (props) => {
         location='Stockholm/Sweden'
       ></Card>
       <Card
-        jobTitle='Senior Software Engineer'
+        jobTitle='Software Engineer'
         companyName='PaybyPhone'
-        duration='12.2018 - now'
+        duration='12.2018 - 2.2021'
         techStack={[
           'Angular10',
           'Typescript',
@@ -52,7 +52,7 @@ export default (props) => {
       ></Card>
 
       <Card
-        jobTitle='Senior Software Engineer'
+        jobTitle='Software Engineer'
         companyName='Jotform'
         duration='01.2018 - 12.2018'
         techStack={['React Js', 'Redux', 'Scss', 'PHP', 'MySQL']}
@@ -62,7 +62,7 @@ export default (props) => {
       ></Card>
 
       <Card
-        jobTitle='Senior Software Engineer'
+        jobTitle='Software Engineer'
         companyName='Bimar IT'
         duration='06.2014 - 01.2018'
         techStack={['AngularJs', 'Css', '.Net Core', 'C#', 'Oracle DB']}
@@ -72,7 +72,7 @@ export default (props) => {
       ></Card>
 
       <Card
-        jobTitle='Senior Software Engineer & Architect'
+        jobTitle='Software Engineer & Architect'
         companyName='Nokia'
         duration='07.2009 - 06.2014'
         techStack={[
