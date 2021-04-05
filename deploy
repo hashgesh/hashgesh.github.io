@@ -1,6 +1,7 @@
 #npm run test
 npm run build
 npm run export
+cp -f ./out/* .
 git add .
 git commit -m "$1"  
 git push
