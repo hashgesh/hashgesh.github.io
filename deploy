@@ -2,7 +2,7 @@
 npm run build
 npm run export
 rm -rf _next
-mv -r ./out/* .
+mv -f ./out/* .
 git add .
 git commit -m "$1"  
 git push
