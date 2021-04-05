@@ -11,7 +11,7 @@ module.exports = withCss(withSass({
                     limit: 100000
                 }
             },
-            assetPrefix: '/',
+            distDir: '/',
         });
 
         return config;
