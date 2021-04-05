@@ -3,11 +3,15 @@ npm run build
 npm run export
 mv ./out/_next ./out/next
 cd ./out 
-grep -rli '/_' | xargs  sed -i 's/\/_/\//g'
 
+ #rename all paths containing _next to next
 grep -rli '_next' | xargs  sed -i 's/_next/next/g'
 
-find . -type f -name "_*" -exec bash -c 'f="$1"; g="${f/*_/}"; mv -- "$f" "$g"' _ '{}' \;
+#remove all paths inside files starting with /_ to /
+grep -rli '/_' | xargs  sed -i 's/\/_/\//g'
+
+#rename all files starting with _ to remove it.
+for i in $(find . -iname '_*') ; do mv $i $(echo $i | sed -e "s/_//"); done 
 
 cd ..
 cp -rf ./out/* .
