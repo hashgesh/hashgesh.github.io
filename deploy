@@ -1,6 +1,8 @@
 #npm run test
 npm run build
 npm run export
+mv ./out/_next ./out/next
+cd ./out && grep -rli '_next' * | xargs -I@ sed -i '' 's/_next/next/g' @;
 cp -rf ./out/* .
 git add .
 git commit -m "$1"  

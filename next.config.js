@@ -10,8 +10,7 @@ module.exports = withCss(withSass({
                 options: {
                     limit: 100000
                 }
-            },
-            assetPrefix: 'next',
+            }
         });
 
         return config;
