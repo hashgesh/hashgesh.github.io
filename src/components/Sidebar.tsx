@@ -1,7 +1,7 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 
-export  default (props) => {
+const Sidebar = (props) => {
   const sidebarItems = [
     //{
     //  label: 'About me',
@@ -24,18 +24,18 @@ export  default (props) => {
   return (
     <div className='mSidebar'>
       <div className='mPhotoContainer'>
-        <Link to={{pathname: `/`, query: {}}}>
+        <Link href="/">
           <img className='mProfilePhoto' src='../static/arif.jpg'></img>
         </Link>
       </div>
       <div className='mNameContainer'>
-        <Link to={{pathname: `/`, query: {}}}>Arif Kürsad Kavas </Link>
+        <Link href="/">Arif Kürsad Kavas </Link>
       </div>
 
       <div className='mSidebarItemContainer'>
         {sidebarItems.map((item) => {
           return (
-            <Link to={{pathname: `${item.url}`, query: {}}} key={item.label}>
+            <Link href={item.url} key={item.label}>
               <div className='mSidebarItem'>{item.label}</div>
             </Link>
           );
@@ -45,6 +45,8 @@ export  default (props) => {
       <div className='mSidebarBottom'>
         <a href='mailTo:arifkavas@gmail.com'>Contact</a>
       </div>
-    </div>
+    </div >
   );
 };
+
+export default Sidebar

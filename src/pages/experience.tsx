@@ -9,10 +9,10 @@ import {
   snowDesc,
 } from '../../static/jobDesc';
 
-export default (props) => {
+const Experience = (props) => {
   return (
     <div className='cardsList'>
-        <Card
+      <Card
         jobTitle='Software Engineer'
         companyName='Snow Software'
         duration='03.2021 - '
@@ -111,3 +111,6 @@ export default (props) => {
     //   ></object>
   );
 };
+
+
+export default Experience

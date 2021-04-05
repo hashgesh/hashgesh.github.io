@@ -44,11 +44,15 @@ body {
   padding: 2em;
   font-size: 1em;
 
-  & > a {
+  &>a {
     text-decoration: none;
   }
 
   &:hover {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   }
+}
+
+#__next {
+  height: 100%;
 }

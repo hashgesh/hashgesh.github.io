@@ -12,6 +12,7 @@
 .mPhotoContainer {
   margin-top: 2em;
   text-align: center;
+  cursor: pointer;
 }
 
 .mProfilePhoto {
@@ -23,7 +24,8 @@
 .mNameContainer {
   text-align: center;
   margin-top: 1em;
-  & > a {
+
+  &>a {
     text-decoration: none;
     color: white;
   }
@@ -32,7 +34,8 @@
 .mSidebarItemContainer {
   padding: 2em 0 0 3em;
   text-align: left;
-  > a {
+
+  >a {
     @include m-font-family;
     text-decoration: none;
   }
@@ -42,13 +45,15 @@
   margin-top: 1em;
   font-size: 1.5rem;
   color: aliceblue;
+  cursor: pointer
 }
 
 .mSidebarBottom {
   position: absolute;
   bottom: 1em;
   margin-left: 1em;
-  & > a {
+
+  &>a {
     text-decoration: none;
     color: white;
   }
@@ -58,12 +63,15 @@
   .mSidebar {
     width: 10%;
   }
+
   .mProfilePhoto {
     height: 3em;
   }
+
   .mSidebarItemContainer {
     padding: 1em 0 0 1em;
-    & > a > div {
+
+    &>a>div {
       font-size: 0.9em;
     }
   }

@@ -1,6 +1,7 @@
-npm run test
+#npm run test
 npm run build
-mv ./dist/* .
+npm run export
+mv ./out/* .
 git add .
 git commit -m "$1"  
 git push

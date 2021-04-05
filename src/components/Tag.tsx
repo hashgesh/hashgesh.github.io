@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-export default (props) => {
+const Tag = (props) => {
   const { text, count } = props;
   return (
     <div className='tagContainer'>
@@ -9,3 +9,6 @@ export default (props) => {
     </div>
   );
 };
+
+
+export default Tag
