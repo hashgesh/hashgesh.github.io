@@ -2,9 +2,13 @@
 npm run build
 npm run export
 mv ./out/_next ./out/next
-cd ./out && grep -rli '_next' | xargs  sed -i 's/_next/next/g'
-grep -rli '_next' | xargs  sed -i 's/^_\(.*\)/\1/'
-find . | sed 's/^_\(.*\)/\1/'
+cd ./out 
+grep -rli '/_' | xargs  sed -i 's/\/_/\//g'
+
+grep -rli '_next' | xargs  sed -i 's/_next/next/g'
+
+find . -type f -name "_*" -exec bash -c 'f="$1"; g="${f/*_/}"; mv -- "$f" "$g"' _ '{}' \;
+
 cd ..
 cp -rf ./out/* .
 git add .
