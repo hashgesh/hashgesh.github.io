@@ -1,12 +1,8 @@
 import React from 'react';
 import 'isomorphic-unfetch';
 import Tag from '../components/Tag';
-import ReactGA from 'react-ga';
 
 const Index = () => {
-
-    ReactGA.initialize('UA-108070842-2');
-    
     return (
         <div className='cardsList' >
             <div className='aboutContainer'>
