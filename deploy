@@ -1,4 +1,5 @@
 #npm run test
+rm -rf .next out
 npm run build
 npm run export
 mv ./out/_next ./out/next
