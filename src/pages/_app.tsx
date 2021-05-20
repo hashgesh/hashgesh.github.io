@@ -32,6 +32,7 @@ class HashgeshApp extends App {
             ReactGA.set({ page: route }); // Update the user's current page
             ReactGA.pageview(route); // Record a pageview for the given page
             console.log(route)
+            return true
         })
     }
 
